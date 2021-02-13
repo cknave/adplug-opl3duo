@@ -7,6 +7,8 @@ OPL3Duo opl3Duo;
 void setup() {
   Serial.begin(BAUD);
   opl3Duo.begin();
+  Serial.write('k');
+  Serial.flush();
 }
 
 void loop() {
@@ -14,6 +16,7 @@ void loop() {
     uint8_t c = Serial.read();
     if(c & 0x80) {
       opl3Duo.reset();
+
       return;
     }
     uint8_t synthUnit = (c & 0x40) >> 6;
