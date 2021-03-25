@@ -15,7 +15,7 @@ Now with dosbox support via a [dosbox-opl3duo] fork!
 
 1. Connect the OPL3 Duo! board to the Arduino as the instructions indicate
 2. In the Arduino IDE, install the OPL2 library (Sketch > Include Library >
-   Manage Libraries... > Arduino APL2)
+   Manage Libraries... > Arduino OPL2)
 3. Open [opl3serial.ino] in the Arduino IDE
 4. Upload to your device
 
